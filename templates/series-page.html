@@ -1,0 +1,16 @@
+{% include 'header.html' %}
+<h2 class="series-title">Results for {{about}}</h2>
+<div class="content">
+
+    {% for content in series_details %}
+    <div class="content-items">
+        <a href="/hanime/{{content["page_link"]}}">
+        <img src="{{content["img"]}}" alt="" srcset="">
+        <h4>{{content["title"]}}</h4>
+        </a>
+    </div>
+    {% endfor %}
+
+</div>
+
+{% include 'footer.html' %}

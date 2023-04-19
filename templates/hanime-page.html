@@ -1,0 +1,48 @@
+{% include 'header.html' %}
+
+<h2 class="page-title">{{page_info["title"]}}</h2>
+<div class="hanime-info">
+  <div class="img">
+    <img src="{{page_info['img']}}" alt="" />
+  </div>
+  <div class="hn-info-table">
+    <table>
+      <tr>
+        <td>Viewed</td>
+        <td class="td">{{page_info['details'][1]}}</td>
+      </tr>
+      <tr>
+        <td>Alternative</td>
+        <td class="td">{{page_info['details'][2]}}</td>
+      </tr>
+      <tr>
+        <td>Authors</td>
+        <td class="td">{{page_info['details'][3]}}</td>
+      </tr>
+      <tr>
+        <td>Genres</td>
+        <td class="td">{{page_info['details'][4]}}</td>
+      </tr>
+    </table>
+  </div>
+</div>
+
+<div class="episodes-table">
+  <h1>Episodes</h1>
+  {% for ep in page_info["episodes"] %}
+  <h3>
+    <a href="/hanime/watch/{{ep['ep_link']}}">
+      <img src="{{ep['ep_thumbnail']}}" />{{ep['ep_num']}}
+    </a>
+  </h3>
+  {% endfor %}
+</div>
+
+<div class="summary">
+  <h2>Summary</h2>
+  <p>{{page_info['summary']}}</p>
+</div>
+
+<div class="see-more"></div>
+
+{% include 'footer.html' %}

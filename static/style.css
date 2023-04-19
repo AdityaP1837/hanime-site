@@ -1,0 +1,377 @@
+body {
+  background-color: black;
+}
+/** Navbar */
+.navbar {
+  background-color: currentColor;
+}
+.navbar-nav {
+  margin-left: 935px;
+}
+.nav-link {
+  color: aqua;
+}
+.active {
+  background-color: aqua;
+}
+.nav-link:hover {
+  color: rgb(161, 231, 231);
+}
+.navbar .container-fluid .navbar-toggler{
+  background-color: red;
+}
+/** Main-Page Videos Container */
+.main-container {
+  display: flex;
+  background-color: black;
+}
+.contents {
+  padding: 10px 20px;
+}
+.contents h2 {
+  background-color: cyan;
+  color: black;
+  padding: 10px;
+}
+.contents .content {
+  background-color: black;
+}
+.contents .content .container .row .col .p-3 a {
+  text-decoration: none;
+}
+.contents .content .container .row .col .p-3 img {
+  width: 205px;
+  height: 295px;
+}
+.contents .content .container .row .col .p-3 p {
+  color: lawngreen;
+  padding-top: 15px;
+  font-size: 15px;
+  font-weight: 600;
+}
+
+.navigation-links {
+  padding: 20px;
+  width: 600px;
+}
+.navigation-links h2 {
+  color: red;
+}
+.navigation-links .tags-list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.navigation-links .tags-list .taglist-items {
+  padding: 10px;
+  background-color: floralwhite;
+  border-radius: 20px;
+  margin: 10px;
+}
+.navigation-links .tags-list .taglist-items a {
+  text-decoration: none;
+  color: black;
+  font-weight: 700;
+}
+.navigation-links .tags-list .taglist-items:hover {
+  cursor: pointer;
+}
+.navigation-links .tags-list .taglist-items a:hover {
+  color: rgb(255, 0, 0);
+}
+/*! Hanime Info Page */
+.page-title {
+  color: greenyellow;
+  text-align: center;
+  margin-top: 20px;
+}
+.hanime-info {
+  display: flex;
+  margin: 20px 30%;
+  background-color: currentColor;
+  padding: 20px;
+}
+.img {
+  margin-left: 40px;
+  margin-right: 30px;
+}
+.img img {
+  width: 220px;
+}
+.hn-info-table {
+  margin-left: 18px;
+  margin-top: 10px;
+  background-color: black;
+  padding: 25px;
+  width: 395px;
+  height: 300px;
+}
+.hn-info-table table tr {
+  color: greenyellow;
+}
+.hn-info-table table tr td {
+  padding: 10px 0;
+}
+.hn-info-table table tr .td {
+  padding-left: 85px;
+  color: darkorange;
+}
+.episodes-table {
+  background-color: currentColor;
+  margin: 55px 28%;
+  border-radius: 20px;
+  padding-bottom: 20px;
+}
+.episodes-table h1 {
+  color: red;
+  padding: 15px;
+  background-color: burlywood;
+  text-align: center;
+}
+.episodes-table h3 {
+  margin: 10px 25%;
+  padding: 10px 10px;
+  border-radius: 15px;
+  font-size: 32px;
+}
+.episodes-table h3 a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+.episodes-table h3 a img {
+  width: 150px;
+  margin-right: 55px;
+}
+.episodes-table h3:hover,
+.episodes-table a:hover {
+  cursor: pointer;
+  font-size: 33px;
+  background-color: rgb(61, 60, 60);
+}
+.summary {
+  margin: 0 15%;
+}
+.summary h2 {
+  color: red;
+}
+.summary p {
+  color: cyan;
+  font-size: 20px;
+  text-align: justify;
+}
+
+/*! Watch Page */
+.watch-info {
+  margin: 10px 30%;
+  background-color: aliceblue;
+  padding: 10px;
+  border-radius: 20px;
+}
+.watch-info h2 {
+  color: black;
+}
+.watch-container {
+  position: relative;
+  padding-bottom: 25.25%;
+  height: 0;
+  background: #000 !important;
+  text-align: center;
+  margin: 25px 20%;
+}
+.watch-container iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/*! Pick Your Poison */
+
+.pyp-title {
+  color: red;
+  display: inline;
+  font-size: 40px;
+  margin-left: 20%;
+}
+
+.content-container {
+  margin: 30px 20%;
+  background-color: #181818;
+  padding: 0 10px;
+}
+
+.genres-container i,
+.years-container i,
+.tags-container i {
+  color: cyan;
+  padding: 0 15px;
+  font-size: 27px;
+}
+
+.genres-container h1,
+.years-container h1,
+.tags-container h1 {
+  color: chartreuse;
+}
+
+.genres-container .container,
+.years-container .container,
+.tags-container .container {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: 30px;
+  margin-bottom: 30px;
+}
+
+.genres-container .container .items,
+.years-container .container .items,
+.tags-container .container .items {
+  margin: 10px;
+  background-color: rgb(0, 0, 0);
+  padding: 10px;
+  height: 45px;
+  border-radius: 20px;
+}
+
+.genres-container .container .items p a,
+.years-container .container .items p a,
+.tags-container .container .items p a {
+  text-decoration: none;
+  color: white;
+}
+
+.genres-container .container .items:hover,
+.years-container .container .items:hover,
+.tags-container .container .items:hover {
+  background-color: rgb(250, 0, 0);
+  cursor: pointer;
+}
+
+.line {
+  border: 4px solid grey;
+}
+
+/*! Series Page */
+.series-title{
+  text-align: center;
+  color: aliceblue;
+  padding: 20px;
+}
+/* .content{
+  display: flex;
+  flex-wrap: wrap;
+  background-color: currentColor;
+  margin: 0 15%;
+  padding-left: 40px;
+}
+.content .content-items{
+  width: 200px;
+  margin: 25px;
+  text-align: center;
+  background-color: black;
+}
+.content .content-items a{
+  text-decoration: none;
+  color: chartreuse;
+}
+.content .content-items a img{
+  width: 200px;
+}
+.content .content-items a h4{
+  font-size: 18px;
+  padding-top: 10px;
+} */
+
+/*! Media Query */
+@media (max-width: 500px){
+  .navbar-nav{
+    margin-left: 2px;
+  }
+  .navbar-nav .nav-item .nav-link{
+    padding-left: 10px;
+  }
+  .main-container .navigation-links{
+    display: none;
+  }
+  .contents h2{
+    display: none;
+  }
+  .contents .content .container{
+    padding: 0;
+    margin-left: -5px;
+  }
+  .contents .content .container .row .col{
+    height: 335px;
+  }
+  .contents .content .container .row .col .p-3 img{
+    width: 180px;
+    height: 260px;
+  }
+
+  /*! Pick Your Poison */
+  .pyp-title{
+    display: block;
+    text-align: center;
+    font-size: 28px;
+    margin-left: 0;
+  }
+  .content-container{
+    margin: 20px 5%;
+    padding: 0 5px;
+  }
+  .content-container .genres-container h1{
+    padding-top: 10px;
+  }
+  .content-container .genres-container .container{
+    margin-left: 5px;
+  }
+
+  /*! Hanime Info Page  */
+  .hanime-info{
+    margin: 20px 0%;
+  }
+  .img{
+    margin-left: 0;
+    margin-right: 0;
+  }
+  .img img{
+    width: 250px;
+  }
+  .hn-info-table{
+    display: none;
+  }
+  .hn-info-table table tr .td{
+    padding-left: 35px;
+  }
+  .episodes-table {
+    margin: 35px 5%;
+    padding-bottom: 5px;
+  }
+  .episodes-table h1{
+    padding: 10px;
+  }
+  .episodes-table h3{
+    margin: 10px 5%;
+    font-size: 25px;
+  }
+  .episodes-table h3 a img{
+    width: 140px;
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+  .summary{
+    margin: 0 5%;
+  }
+
+  /*! Watch Page */
+  .watch-info{
+    margin: 20px 15%;
+  }
+  .watch-info h2{
+    text-align: center;
+  }
+  .watch-container{
+    padding-bottom: 53.25%;
+    margin: 0;
+  }
+}

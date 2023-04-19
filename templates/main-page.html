@@ -1,0 +1,40 @@
+{% include 'header.html' %}
+
+    <div class="main-container">
+      <div class="contents">
+            <h2>Hentai Contents</h2>
+
+            <div class="content">
+                <div class="container text-center">
+                    <div class="row row-cols-2 row-cols-lg-5 g-2 g-lg-3">
+                        {% for details in mpage_details["contents"] %}
+                    <div class="col">
+                        <div class="p-3">
+                            <a href="/hanime/{{details["page_link"]}}">
+                                <img src="{{details["img"]}}"/>
+                                <p>{{details["title"]}}</p>
+                            </a>
+                        </div>
+                    </div>
+                        {% endfor %}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+      <div class="navigation-links">
+        <h2>Genres</h2>
+        <div class="tags-list">
+
+          {% for genre in mpage_details["genres"] %}
+          <div class="taglist-items">
+            <a href="/series/{{genre["genre_link"]}}">{{genre["genre"]}}</a>
+          </div>
+          {% endfor %}
+
+        </div>
+        
+      </div>
+    </div>
+    
+{% include 'footer.html' %}

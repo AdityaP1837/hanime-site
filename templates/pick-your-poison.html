@@ -1,0 +1,42 @@
+{% include 'header.html' %}
+
+  <body style="background-color: black">
+    <br>
+    <h2 class="pyp-title">Pick Your Poison</h2>
+    <div class="content-container">
+      <div class="genres-container">
+        <h1><i class="bx bxs-polygon"></i>Genres</h1>
+        <hr class="line" />
+        <div class="container">
+          {% for data in details_info['genres'] %}
+          <div class="items">
+            <p><a href="{{data['genre_link']}}">{{data['genre']}}</a></p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="years-container">
+        <h1><i class="bx bxs-polygon"></i>Years 1991 - 2023</h1>
+        <hr class="line" />
+        <div class="container">
+          {% for data in details_info['years'] %}
+          <div class="items">
+            <p><a href="{{data['year_link']}}">{{data['year']}}</a></p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+      <div class="tags-container">
+        <h1><i class="bx bxs-polygon"></i>Tags</h1>
+        <hr class="line" />
+        <div class="container">
+          {% for data in details_info['tags'] %}
+          <div class="items">
+            <p><a href="{{data['tags_link']}}">{{data['tags']}}</a></p>
+          </div>
+          {% endfor %}
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
