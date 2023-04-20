@@ -293,6 +293,9 @@ body {
   .main-container .navigation-links{
     display: none;
   }
+  .contents{
+    padding: 0;
+  }
   .contents h2{
     display: none;
   }
@@ -304,8 +307,8 @@ body {
     height: 335px;
   }
   .contents .content .container .row .col .p-3 img{
-    width: 180px;
-    height: 260px;
+    width: 150px;
+    height: 230px;
   }
 
   /*! Pick Your Poison */
@@ -335,7 +338,7 @@ body {
     margin-right: 0;
   }
   .img img{
-    width: 250px;
+    width: 120px;
   }
   .hn-info-table{
     display: none;
